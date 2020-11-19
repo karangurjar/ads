@@ -6,12 +6,7 @@ type BinaryTree struct {
 
 func (bt *BinaryTree) Insert(ele int) {
 	if bt.Root == nil {
-		bt.Root = &Node{
-			Data:      ele,
-			LeftNode:  nil,
-			RightNode: nil,
-		}
-
+		bt.Root = NewNode(ele)
 		return
 	}
 
