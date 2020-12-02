@@ -9,6 +9,19 @@ func (bt *BinaryTree) Insert(ele int) {
 		bt.Root = NewNode(ele)
 		return
 	}
+	InsertRecursive(bt.Root, ele)
+}
 
-	//continue to iterate and insert
+func InsertRecursive(node *Node, ele int) {
+	if node.LeftNode == nil {
+		node.LeftNode = NewNode(ele)
+		return
+	}
+
+	if node.RightNode == nil {
+		node.RightNode = NewNode(ele)
+	}
+
+	InsertRecursive(node.LeftNode, ele)
+	InsertRecursive(node.RightNode, ele)
 }
