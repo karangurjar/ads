@@ -10,5 +10,6 @@ func main() {
 	bt.Insert(20)
 	bt.Insert(30)
 	bt.Insert(40)
+	bt.Insert(40)
 	bt.Print()
 }
