@@ -12,10 +12,9 @@ advanced data structure
 - https://www.geeksforgeeks.org/heap-data-structure/
 - https://www.hackerearth.com/practice/data-structures/trees/heapspriority-queues/tutorial/
 
-#Complaxity study summary:
-Data structure
-————————
-Dynamic Array:
+###Complaxity study summary:
+
+#Dynamic Array:
 * Double the size of new array and copy old array once the original array is full.
 Get: O(1)ST
 Set: O(1)ST
