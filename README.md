@@ -1,20 +1,10 @@
-# ads
-advanced data structure
+# ADS #
+## Introduction ##
+ADS(Advancing data structre) is learning workspace/lab to understand data structure and algorithms. Programming languge used is GO(Golang).
 
-### data structure links
-- https://www.hackerearth.com/practice/data-structures/
+## Complaxity study summary: ##
 
-#TREE
-- https://www.geeksforgeeks.org/binary-tree-data-structure/
-- https://www.hackerearth.com/practice/data-structures/trees/binary-and-nary-trees/tutorial/
-
-#HEAP
-- https://www.geeksforgeeks.org/heap-data-structure/
-- https://www.hackerearth.com/practice/data-structures/trees/heapspriority-queues/tutorial/
-
-###Complaxity study summary:
-
-#Dynamic Array:
+Dynamic Array:
 * Double the size of new array and copy old array once the original array is full.
 Get: O(1)ST
 Set: O(1)ST
@@ -36,14 +26,14 @@ HashTable:
 	Insert/Delete/Search: O(1)ST, O(n)-worst case
 	Initialising: O(n)ST
 
-Stack -
+Stack:
 * LIFO (last in first out) -
 * implement using dynamic array, so amortise analysis is constant for both add/delete(push/pop) operation(since both operation is on last index of the array).
 	Example: book store;
 	insert/delete: O(1)ST
 	Searching: O(n)
 
-Queue -
+Queue:
 * FIFO (first in first out),
 * can’t implement using dynamic array to achieve the const complexity on both insert/delete (enqueue/dequeue) operation. So has to implement using linked list.
 	linked list implementation : has to have the tail pointer to delete(dequeue) at the last of the queue.
@@ -75,3 +65,17 @@ Complete Tree: all node has to have 2 nodes except child
 Perfect Tree: all leaf node has same depth
 Store: O(n)ST
 Traverse: O(n)T, O(log(n)) from root to one path
+
+### Resources ###
+
+# DATA STRUCTURE #
+* https://www.hackerearth.com/practice/data-structures/
+
+# TREE #
+* BinaryTree: https://leetcode.com/explore/learn/card/data-structure-tree/134/traverse-a-tree/992/
+* https://www.geeksforgeeks.org/binary-tree-data-structure/
+* https://www.hackerearth.com/practice/data-structures/trees/binary-and-nary-trees/tutorial/
+
+# HEAP #
+* https://www.geeksforgeeks.org/heap-data-structure/
+* https://www.hackerearth.com/practice/data-structures/trees/heapspriority-queues/tutorial/
