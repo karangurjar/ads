@@ -51,7 +51,8 @@ String:
 	Copy: O(n) ST
 
 Graph:
-	Vertex, Edges, Connected/Disconnected Graph, Directed/Undirected Graph(flights)(friendship), cyclic graph - avoid cycle by marking node as visited,
+	Vertex, Edges, Connected/Disconnected Graph, Directed/Undirected Graph(flights)(friendship),
+	cyclic graph - avoid cycle by marking node as visited,
 	Store: O(V+E)S
 	Traverse: DFS, BFS, O(V+E)T
 
@@ -66,16 +67,16 @@ Perfect Tree: all leaf node has same depth
 Store: O(n)ST
 Traverse: O(n)T, O(log(n)) from root to one path
 
-### Resources ###
+## Resources ##
 
-# DATA STRUCTURE #
+### DATA STRUCTURE ###
 * https://www.hackerearth.com/practice/data-structures/
 
-# TREE #
+### TREE ###
 * BinaryTree: https://leetcode.com/explore/learn/card/data-structure-tree/134/traverse-a-tree/992/
 * https://www.geeksforgeeks.org/binary-tree-data-structure/
 * https://www.hackerearth.com/practice/data-structures/trees/binary-and-nary-trees/tutorial/
 
-# HEAP #
+### HEAP ###
 * https://www.geeksforgeeks.org/heap-data-structure/
 * https://www.hackerearth.com/practice/data-structures/trees/heapspriority-queues/tutorial/
