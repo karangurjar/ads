@@ -1,7 +1,5 @@
 package tree
 
-import "fmt"
-
 type BinaryTree struct {
 	Root *Node
 }
@@ -34,17 +32,23 @@ func (bt *BinaryTree) Insert(ele int) {
 	}
 }
 
-func (bt *BinaryTree) Print() {
-	fmt.Print("[")
-	Traverse(bt.Root)
-	fmt.Print("]")
+func PreOrderTraversal(root *Node) []int {
+	nodesData := make([]int, 0)
+	if root == nil {
+		return nodesData
+	}
+
+	preOrder(root, &nodesData)
+
+	return nodesData
 }
 
-func Traverse(root *Node) {
+func preOrder(root *Node, nodesData *[]int) {
 	if root == nil {
 		return
 	}
-	fmt.Printf("%d,", root.Data)
-	Traverse(root.LeftNode)
-	Traverse(root.RightNode)
+
+	*nodesData = append(*nodesData, root.Data)
+	preOrder(root.LeftNode, nodesData)
+	preOrder(root.RightNode, nodesData)
 }

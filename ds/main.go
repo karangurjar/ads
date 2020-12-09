@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/karsingh991/ads/ds/tree"
 )
 
@@ -12,5 +14,5 @@ func main() {
 	bt.Insert(40)
 	bt.Insert(50)
 	bt.Insert(60)
-	bt.Print()
+	fmt.Print(tree.PreOrderTraversal(bt.Root))
 }
