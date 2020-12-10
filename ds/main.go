@@ -15,4 +15,5 @@ func main() {
 	bt.Insert(50)
 	bt.Insert(60)
 	fmt.Print(tree.PreOrderTraversal(bt.Root))
+	fmt.Print(tree.InOrderTraversal(bt.Root))
 }

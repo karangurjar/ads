@@ -34,9 +34,6 @@ func (bt *BinaryTree) Insert(ele int) {
 
 func PreOrderTraversal(root *Node) []int {
 	nodesData := make([]int, 0)
-	if root == nil {
-		return nodesData
-	}
 
 	preOrder(root, &nodesData)
 
@@ -51,4 +48,22 @@ func preOrder(root *Node, nodesData *[]int) {
 	*nodesData = append(*nodesData, root.Data)
 	preOrder(root.LeftNode, nodesData)
 	preOrder(root.RightNode, nodesData)
+}
+
+func InOrderTraversal(root *Node) []int {
+	nodesData := make([]int, 0)
+
+	inOrderTraverse(root, &nodesData)
+
+	return nodesData
+}
+
+func inOrderTraverse(root *Node, nodesData *[]int) {
+	if root == nil {
+		return
+	}
+
+	inOrderTraverse(root.LeftNode, nodesData)
+	*nodesData = append(*nodesData, root.Data)
+	inOrderTraverse(root.RightNode, nodesData)
 }
