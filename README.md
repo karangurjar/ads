@@ -70,12 +70,12 @@ Traverse: O(n)T, O(log(n)) from root to one path
 ## Resources ##
 
 ### DATA STRUCTURE ###
+* https://www.geeksforgeeks.org/binary-tree-data-structure/
+* https://www.hackerearth.com/practice/data-structures/trees/binary-and-nary-trees/tutorial/
 * https://www.hackerearth.com/practice/data-structures/
 
 ### TREE ###
 * BinaryTree: https://leetcode.com/explore/learn/card/data-structure-tree/134/traverse-a-tree/992/
-* https://www.geeksforgeeks.org/binary-tree-data-structure/
-* https://www.hackerearth.com/practice/data-structures/trees/binary-and-nary-trees/tutorial/
 
 ### HEAP ###
 * https://www.geeksforgeeks.org/heap-data-structure/
